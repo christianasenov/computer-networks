@@ -13,11 +13,11 @@ public class TCPClient {
 	public static void main(String[] args) throws IOException {
 
 		// IP Addresses will be discussed in detail in lecture 4
-		String IPAddressString = "127.0.0.1";
+		String IPAddressString = "10.200.51.18";
 		InetAddress host = InetAddress.getByName(IPAddressString);
 
 		// Port numbers will be discussed in detail in lecture 5
-		int port = 7890;
+		int port = 2011;
 
 		// This is where we create a socket object
 		// That creates the TCP connection
@@ -29,15 +29,17 @@ public class TCPClient {
 		Writer writer = new OutputStreamWriter(clientSocket.getOutputStream());
 
 		// Sending a message to the server at the other end of the socket
-		System.out.println("Sending a message to the server");
-		writer.write("Hello Server!\n");
-		writer.flush();
+		System.out.println("Connected to server!");
+		// writer.write("Hello Server!\n");
+		// writer.flush();
 		// To make better use of bandwidth, messages are not sent
 		// until the flush method is used
 
 		// We can read what the server has said
-		String response = reader.readLine();
-		System.out.println("The server said : " + response);
+		String response = null;
+		while ((response = reader.readLine()) != null) {
+			System.out.println("The server said : " + response);
+		}
 
 		// Close down the connection
 		clientSocket.close();
