@@ -38,7 +38,7 @@ public class TCPClient {
 		// We can read what the server has said
 		String response = null;
 		while ((response = reader.readLine()) != null) {
-			System.out.println("The server said : " + response);
+			System.out.println(response);
 		}
 
 		// Close down the connection
