@@ -29,7 +29,6 @@ public class TCPClient {
 		Writer writer = new OutputStreamWriter(clientSocket.getOutputStream());
 
 		// Sending a message to the server at the other end of the socket
-		System.out.println("Connected to server!");
 		// writer.write("Hello Server!\n");
 		// writer.flush();
 		// To make better use of bandwidth, messages are not sent
