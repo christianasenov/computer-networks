@@ -28,7 +28,7 @@ public class TCPClient {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 		Writer writer = new OutputStreamWriter(clientSocket.getOutputStream());
 
-		// Sending a message to the server at the other end of the socket
+		// Sending a message to the server at the other end of the socket //hiiiiiiiiiiiiiiiiiii hetaol was hnereeeeeeee
 		// writer.write("Hello Server!\n");
 		// writer.flush();
 		// To make better use of bandwidth, messages are not sent
