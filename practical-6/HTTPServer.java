@@ -49,7 +49,7 @@ public class HTTPServer {
 		System.out.println("Path: " + path);
 
 		// If GET request for index
-		if (method.equals("GET") && (path.equals("/") || path.equals("/index.html"))) {
+		if (method.equals("GET")) {
 
     		String body = "<html><body><h1>Hello from HTTPServer</h1></body></html>";
 
