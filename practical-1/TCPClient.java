@@ -17,7 +17,7 @@ public class TCPClient {
 		InetAddress host = InetAddress.getByName(IPAddressString);
 
 		// Port numbers will be discussed in detail in lecture 5
-		int port = 18080;
+		int port = 2011;
 
 		// This is where we create a socket object
 		// That creates the TCP connection
