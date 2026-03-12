@@ -14,7 +14,7 @@ public class TCPServer {
 	public static void main(String[] args) throws IOException {
 
 		// Port numbers will be discussed in detail in lecture 5
-		int port = 9308;
+		int port = 18080;
 
 		// The server side is slightly more complex
 		// First we have to create a ServerSocket
